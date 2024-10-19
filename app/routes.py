@@ -1,7 +1,6 @@
 from flask import Blueprint, render_template, url_for, flash, redirect, request
 from app import db, bcrypt
 import requests
-from flask_socketio import SocketIO, emit
 from datetime import datetime
 from app.models import User,Appointment,ChatMessage
 from app.models import db, EmergencyContact,UserProfile,Medication
@@ -12,7 +11,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 main = Blueprint('main', __name__)
-socketio = SocketIO()
 
 
 
@@ -656,7 +654,7 @@ def predict():
 
 
     
-@main.route("/chat")
+"""@main.route("/chat")
 @login_required
 def chat():
     return render_template('chat.html')
@@ -688,4 +686,4 @@ def get_messages(receiver_id):
         (ChatMessage.sender_id == receiver_id) & (ChatMessage.receiver_id == current_user.id)
     ).order_by(ChatMessage.timestamp).all()
     
-    return render_template('messages.html', messages=messages, receiver_id=receiver_id)
+    return render_template('messages.html', messages=messages, receiver_id=receiver_id)"""
