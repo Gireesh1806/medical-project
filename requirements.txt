@@ -10,4 +10,5 @@ pandas==2.1.1
 matplotlib==3.8.0
 email_validator
 flask_wtf
+gunicorn
 
