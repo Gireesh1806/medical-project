@@ -567,7 +567,7 @@ def display_user_profile():
     return render_template('display_user_profile.html', profile=profile)
 
 
-import os
+"""import os
 
 base_dir = os.path.dirname(os.path.abspath(__file__))
 
@@ -649,7 +649,7 @@ def predict():
 
 
 
-
+"""
 
 
 
