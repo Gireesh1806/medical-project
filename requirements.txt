@@ -12,3 +12,4 @@ matplotlib==3.8.0             # No specific compatibility issues
 email_validator               # Works with Flask
 flask_wtf                     # Works with Flask
 gunicorn
+python-dotenv
