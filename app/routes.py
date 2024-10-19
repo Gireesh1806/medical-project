@@ -116,7 +116,7 @@ def assesment():
             db.session.add(assessment)
             db.session.commit()
             flash("Assessment submitted successfully!", "success")
-            return redirect(url_for('main.predict'))
+            return redirect(url_for('main.index'))
         except Exception as e:
             db.session.rollback()  
             print(f"Error occurred: {e}")  
