@@ -202,7 +202,7 @@ def feedback():
 
 
 
-import io
+"""import io
 import base64
 
 
@@ -300,7 +300,7 @@ def charts():
     charts_base64['Positive vs Negative Impact'] = base64.b64encode(pie_chart.getvalue()).decode('utf-8')
     plt.close()  
 
-    return render_template('charts.html', charts=charts_base64)
+    return render_template('charts.html', charts=charts_base64)"""
 
 
 
